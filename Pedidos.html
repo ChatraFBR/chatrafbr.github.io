@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #fff8de;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        textarea {
+            width: 45%;
+            height: 600px;
+        }
+        fieldset {
+            width: 45%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <table>
+        <tr>
+            <th><a href="index.html"><img src="imagenes/logo.png" alt="holme"
+                        style="width: 100%; height: auto; height: 40px"></a></th>
+            <th><a href="galeria.html" class="ga-nav subtopnav_firstitem" title="galeria">Galeria</a></th>
+            <th><a href="Ejemplo.html" class="ga-nav subtopnav_firstitem" title="galeria">Ejemplo</a></th>
+            <th><a href="Pedidos.html" class="ga-nav subtopnav_firstitem" title="galeria">Pedidos</a></th>
+        </tr>
+    </table>
+    <h2>Haz tu pedido aqui, rellena lo siguiente y entrarás a la cola de espera.</h2>
+    <div class="container">
+        <fieldset>
+            <legend>Pedido</legend>
+            <p>Aqui puedes ver un ejemplo de pedido y como a de hacerse de manera correcta.</p>
+            <a href="Ejemplo.html"><p>Ejemplo</p></a>
+            <br>
+            <textarea name="message">Introduce la descripción de la imagen que deseas.</textarea>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Infrormación de contacto</legend>
+
+            <form action="/submit_email.php">
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
